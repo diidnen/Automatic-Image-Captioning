@@ -9,8 +9,6 @@ The goal of this project is to generate descriptive captions for images using a 
 - **LSTM**: A recurrent neural network (RNN) used to generate captions based on the extracted features.
 - **Word Embedding**: Words in the captions are represented using embedding layers to convert text data into numerical data that the LSTM can understand.
 
-## Steps Involved
-
 ### 1. **COCO Dataset Download**
 The **COCO 2014 dataset** is used, which contains over 80,000 images and their corresponding captions. To start, you need to download the following parts:
 - **2014 Train/Val dataset**: Includes both images and annotations.
@@ -24,8 +22,4 @@ Data preprocessing involves preparing the image data and captions for model trai
 - **Text Processing**: The captions are tokenized and converted to word embeddings for feeding into the LSTM model.
 - **Data Augmentation**: To enhance model generalization, we perform random image transformations (e.g., flipping, rotation).
 
-### 3. **Feature Extraction with ResNet**
-ResNet, a powerful pre-trained model, is used to extract features from images:
-- We load a **pre-trained ResNet50** model, remove its final classification layer, and use the rest of the network to extract image features.
-- These features are then used as input to the LSTM.
-- 
+ 
